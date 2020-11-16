@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>QuarkMasses</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" type="text/javascript"></script>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<style>
+    .ref {
+        color: green;
+        font-size: large;
+        font-weight: bold;
+    }
+    .todo {
+        color: red;
+    }
+    .done {
+        color: purple;
+    }
+    .expr {
+        color: blue;
+        font-size: large;
+        font-weight: bold;
+    }
+</style>
+<h1 id="changelog">CHANGELOG</h1>
+<ul>
+<li>2020-Nov-04: notebooks scanned; 0.0.0 started</li>
+<li>2020-Nov-12: 0.0.0 finished</li>
+</ul>
+<h1 id="theorems">Theorems</h1>
+<p>THEOREM: Fire represents the domain of a function.</p>
+<ul>
+<li>A function f is represented by Fire.</li>
+<li>In order to chain functions together such that the output (co-domain) of one function becomes the input (domain) of another function, and in order for both inputs to be represented by the same element (i.e. the element that represents a domain), the only element which can represent the domain is Fire, because Fire(domain) -&gt; f(Fire) -&gt; Fire(co-domain/domain).</li>
+</ul>
+<p>THEOREM: Formula = Wood; values = Earth.</p>
+<ul>
+<li>If it’s possible to use deductive reasoning (Metal operation) to yield a formula from values such that the values are found by evaluating (reducing the number of states of, i.e. “-&gt; Fire -&gt;”) the formula, then the only possibility is that the formula = Wood and its values = Earth.</li>
+<li>formula.values uses the property accessor method (formula-element &amp;&amp; values(Earth)) and Formula.fromValues(values) uses the operation method (Wood-op(Values element)) because it is a function.</li>
+<li>Compare this theorem with element-of (Earth op) vs. set-of (Wood op).</li>
+</ul>
+<h1 id="computing-quark-masses">Computing Quark Masses</h1>
+<h2 id="quark-masses-excluding-the-top-quark-mass">Quark Masses, Excluding the Top Quark Mass</h2>
+<h3 id="dependencies">Dependencies</h3>
+<ul>
+<li>5-Quarks = Earth</li>
+<li>Which planets which quarks are represented by which elements</li>
+<li>“Gaussian curve scaled such that gc(2) = 1” = Wood</li>
+<li>{0..4} = Fire</li>
+</ul>
+<h3 id="computation">Computation</h3>
+<p><span class="expr">1. Values of masses of 5 quarks = Water[1]</span></p>
+<ul>
+<li>(5-quarks).mass = 5-quarks(Earth) &amp;&amp;(Earth op) mass(Wood) = <span class="ref">Water[1]</span>.</li>
+<li>Therefore, <strong>(values of masses of 5 quarks = Water[1])</strong>.</li>
+</ul>
+<hr />
+<p><span class="expr">2. 5-quark mass formula = Wood[2]</span></p>
+<ul>
+<li>If there is more than one input/output, the solution will be a formula.</li>
+<li>Formula(Wood op) of-quark-mass-values(Water[1]) = <span class="ref">Wood[2]</span>.</li>
+<li>Therefore, <strong>(quark mass formula = Wood[2])</strong></li>
+</ul>
+<hr />
+<p><span class="expr">3. Wood[3] = Fire[4] + Metal[5]</span></p>
+<ol type="1">
+<li>OPERATION SELECT:
+<ul>
+<li><span class="todo">TODO: Iterate through the list of methods that determine the next step… or is the first step always to set the correct units?</span> quark-masses(Water[1]) -&gt; <span class="ref">Fire[3]</span> -&gt; has-units-of-MeV/c^2(Metal)</li>
+<li>Therefore, <strong>(Wood[2] = Fire<a href="a,%20b?">3</a>)</strong>.</li>
+<li><span class="todo done">TODO: Check which Fire operation = Fire[3].</span>
+<ul>
+<li>Wood(Water) = Wood (i.e. values = Water).</li>
+<li>Water = f(Metal) = f(x, y), therefore, the operation is binary.</li>
+<li>The only binary Fire operation which maps number -&gt; number is “+”.</li>
+<li>Therefore, Fire[3] = “+”.</li>
+</ul></li>
+<li>Therefore, <strong>(Fire[3] = “+”)</strong>.</li>
+<li>Therefore, <strong>(Wood[2] = a + b)</strong>.</li>
+</ul></li>
+<li>OPERAND SELECT:
+<ul>
+<li>a and b must have the same units (namely, MeV/c^2), therefore a &amp;&amp; b = a + b.</li>
+<li>Therefore, <strong>(Wood[2] = <span class="ref">Fire[4]</span> + <span class="ref">Metal[5]</span>)</strong>.</li>
+</ul></li>
+<li>NOTES:
+<ul>
+<li>The result of units(a &amp;&amp; b) is defined iff a and b have units in common.</li>
+<li>The result of units(a + b) is defined iff a and b have units in common.</li>
+<li>units(a) = units(b) iff units(a &amp;&amp; b) = units(a + b).</li>
+</ul></li>
+</ol>
+<hr />
+<p><span class="expr">4. Metal[5] = Fire[7] * Water[8]</span></p>
+<ol type="1">
+<li>OPERATION SELECT:
+<ul>
+<li>Metal[5] = f(Planets) = f(Fire). Fire -&gt; <span class="ref">Earth[6]</span> -&gt; Metal[5].</li>
+<li>Therefore, <strong>(Metal[5] = Earth<a href="a,%20b?">6</a>)</strong>.</li>
+<li><span class="todo done">TODO: Check which Earth operation = Earth[6].</span>
+<ul>
+<li>Sequence-of(Earth op) Water = Metal[5].</li>
+<li>Water = f(x,y).</li>
+<li>The only binary Earth operation which maps number -&gt; number = "*".</li>
+<li>Therefore, Earth[6] = "*".</li>
+</ul></li>
+<li>Therefore, **(Earth[6] = "*")**.</li>
+<li>Therefore, <strong>(Metal[5] = a * b)</strong>.</li>
+</ul></li>
+<li>OPERAND SELECT:
+<ul>
+<li>Either a or b must be Water, and since Water -&gt; Fire -&gt; Metal[5]:</li>
+<li>Therefore, <strong>(Metal[5] = <span class="ref">Fire[7]</span> * <span class="ref">Water[8]</span>)</strong>.</li>
+</ul></li>
+<li>NOTES:
+<ul>
+<li>This is standard procedure for determining the operands of multiplication operations when there are no additional conditions on the whole expression.</li>
+</ul></li>
+</ol>
+<hr />
+<p><span class="expr">5. Metal[5] = f(Earth[9])</span> <span class="todo">IDIOSYNCRATIC</span></p>
+<ul>
+<li>Question: what does Metal depend on?</li>
+</ul>
+<ol type="1">
+<li>OPERATION SELECT:
+<ul>
+<li>Attempting EOF, let Metal * x = (y = Fire or Water) such that Metal -&gt; x -&gt; y or x-&gt; Metal -&gt; y (1).</li>
+<li><ol type="1">
+<li>holds for x = Earth and y = Fire, such that Metal * Earth = Fire.</li>
+</ol></li>
+<li>However, the whole expression Water * Metal * Earth = (Water * Earth) * Metal = Wood.</li>
+<li>Since Wood =/= Metal, (1) does not work.</li>
+<li>Therefore, we must force the units.</li>
+<li>Because the Earth op is used to construct a sequence from elements, the Wood op extracts elements from a sequence.</li>
+<li>f(N) = Metal. Wood-op(Earth(sequence)) = Metal. Therefore, the Wood-op transforms a sequence into f(N), and the simplest such function where the sequence is fully represented (each member of the sequence has an associated input) is the look-up function. As a function of a sequence, f(N) retains its status as a sequence.</li>
+<li>x_i(Wood op) Fire[7] = Earth. (i(Wood) = i(Wood))(Water) -&gt; Earth -&gt; Wood.</li>
+<li>y_i(Wood op) Water[8] = Wood. Water -&gt; Wood -&gt; Fire.</li>
+<li>x(i)(Wood) * y(i)(Fire) = Water_i.</li>
+<li>elof Water_i = Wood.</li>
+<li>Wood(that which has effective units) -&gt; Water -&gt; Metal(that which has target units)</li>
+<li>Therefore, <strong>(Metal[5] = f(Water op))</strong>.</li>
+<li><span class="todo done">(TODO: Water op = size op (radius, specifically))</span>
+<ul>
+<li>Based on the EOF, the goal is to map the planets to quantities in as few operations as possible.</li>
+<li>There is a single Water operation which maps objects -&gt; numbers: the “size-of” operation.</li>
+<li>Because water represents a distance given by x - y (i.e. the length of a straight line segment), the simplest linear measure of size of a spheroid is “average radius”.</li>
+<li>Therefore, Water op = “average radius of”.</li>
+</ul></li>
+</ul></li>
+<li>OPERAND SELECT:
+<ul>
+<li>The radius-of operation applies to the elements of the planets-set/sequence(Fire).</li>
+<li>Radius-of elements-of planets(Fire) = <span class="ref">Earth[9]</span>;</li>
+</ul></li>
+</ol>
+<hr />
+<p><span class="expr">6. Water[8] = (planets.elements.radiusKm ^ 3).set</span></p>
+<ol type="1">
+<li>OPERATION SELECT:
+<ul>
+<li>Set-of Earth[9] = Metal (so the computation is from set to set)</li>
+<li>Metal-set -&gt; Metal-op -&gt; Metal-set[5]</li>
+<li>Therefore, <strong>(Water-set or Fire-set = f(Metal op))</strong>.</li>
+<li><span class="todo done">(TODO: why exponentiation?)</span>
+<ul>
+<li>Element-of(Earth op) Water-set = Metal.</li>
+<li>Metal = f(x,y).</li>
+<li>Therefore, if the Water-set is the result, Water[8] = a ^ b.</li>
+<li>Element-of(Earth op) Fire-set = Wood.</li>
+<li>Wood = f(x).</li>
+<li>Since there is no unary Metal operation which maps number -&gt; number, and since transforming a set into a number requires additional steps, the Fire-set cannot be the result.</li>
+<li>Therefore, Water[8] = a ^ b.</li>
+</ul></li>
+</ul></li>
+<li>OPERAND SELECT:
+<ul>
+<li>Radius and exponentiation are used to yield Water-set.</li>
+<li>Earth[9]^3 = Metal, such that set-of Metal = Water. <strong>VALID</strong> <!-- 2. CASE B: Radius and exponentiation are used to yield Fire-set.
+     - Earth[9]^x = Wood, such that set-of Wood = Fire
+     - Earth[9]^Earth = Wood, but this would be Earth[9]^2, which violates EOF, because this could be easier expressed as a unary operation. **INVALID**
+     - Earth[9]^7 = Wood also works, but an extra step is required (2 + 5 = 7). **INVALID**
+ - Therefore, **(Water[8] = set-of(Wood-op) [radius-of(Water op) elements-of(Earth op) planets(Fire)]^3)**.
+ --></li>
+</ul></li>
+<li>UNIT SELECT:
+<ul>
+<li>units-of(Earth op) Metal = Earth.</li>
+<li>There is no units x for which x ^(Metal op) 3(Wood) = Earth.</li>
+<li>Therefore, the only way to cube x is to represent it as x * x * x.</li>
+<li>Therefore, x = Water.</li>
+<li>The units of distance represented by Water is kilometers (km).</li>
+<li>Therefore, <strong>(Metal has units of km^3)</strong>.</li>
+</ul></li>
+</ol>
+<hr />
+<p><span class="expr">7. Fire[7] = gaussianCurve(Fire[10])</span></p>
+<ol type="1">
+<li>OPERATION SELECT:
+<ul>
+<li>x_i(Wood op) Fire[7] = Earth. elof(Wood op) x_i = Metal.</li>
+<li>Therefore Metal represents that which has effective units.</li>
+<li>MeV/c^2(Earth) /(Wood op) km^3(Earth) = Metal(target units).</li>
+<li>Therefore, Water is that which has target units.</li>
+<li>Metal(that which has effective units) -&gt; Fire -&gt; Water(that which has target units)</li>
+<li>Therefore, <strong>(Fire[7] = Fire(a, b?))</strong>.</li>
+<li>Fire must be given the necessary units, <span class="math display">\[\frac{MeV/c^2}{km^3},\]</span> in the minimum number of steps (conforming to the EOF).</li>
+<li>Because standard operations would require a minimum of two property-getting steps to yield these measurable quantities (since the operations required to yield derived quantities such as density still count as operations for the purpose of the EOF), if there is a Fire function which yields the required units from input in a single step, this function is given priority as the Fire operation which yields Fire[7].</li>
+<li>units-of(Earth op) elements-of(Earth op) Fire[7] = (MeV/c^2 / km^3)(Water) iff [7] is Fire.</li>
+<li>units-of(Earth op) Fire.function(Fire &amp;&amp; Fire = Wood) = Water. In other words, if [7] is Fire, then Water represents the units of the Fire function.</li>
+<li>[7] is Fire, therefore Water represents the units of the Fire function, and Water represents MeV/c^2 / km^3. Therefore the units of the Fire function must be MeV/c^2 / km^3.</li>
+<li>The Gaussian curve is the only function which is represented by Wood. In other words, all functions represented by Wood are the Gaussian curve.</li>
+</ul></li>
+<li>OPERAND SELECT:
+<ul>
+<li><span class="ref">Fire[10]</span> -&gt; gaussian-curve(Fire) -&gt; Fire[7]</li>
+<li>Therefore, <strong>(Fire[7] = Gaussian-curve(Fire)(Fire[10]))</strong> with units of MeV/c^2 / km^3.</li>
+</ul></li>
+</ol>
+<hr />
+<p><span class="expr">8. Fire[10] = Earth[12] + Water[13]</span></p>
+<ol type="1">
+<li>OPERATION SELECT:
+<ul>
+<li>Fire[10] is dependent on the 5 planets.</li>
+<li>Since there is no requirement for Fire[10] to have units, the EOF states that it must not have units.</li>
+<li>The simplest representation without units of the 5 planets is the index representation, and the simplest index representation (by the EOF) is {0..4}.</li>
+<li>The index sequence {0..4} is represented by Fire.</li>
+<li>The index sequence must be transformed into a function domain, so we cannot use the raw index sequence value.</li>
+<li>{0..4}(<span class="ref">Fire[11]</span>) -&gt; operation(Fire) -&gt; result(Fire[10])</li>
+<li>Therefore, <strong>(Fire[10] = Fire(a, b?))</strong>.</li>
+<li><span class="todo done">(TODO: why addition?)</span>
+<ul>
+<li>The type that the Fire operation is being performed on is: element-of(Earth op) Fire[10].function(Fire).domain(Fire) = Metal.</li>
+<li>Metal = f(x,y).</li>
+<li>Addition is the only binary Fire operation which maps number -&gt; number.</li>
+<li>Therefore, Fire[10] = a + b.</li>
+</ul></li>
+</ul></li>
+<li>OPERAND SELECT:
+<ul>
+<li>a and b must have the same units in order to be added together, therefore a &amp;&amp; b = a + b.</li>
+<li>Therefore, <strong>(Fire[10] = <span class="ref">Earth[12]</span> + <span class="ref">Water[13]</span>)</strong>.</li>
+</ul></li>
+</ol>
+<hr />
+<p><span class="expr">9. Water[13] = {1,1,1,1,1}</span></p>
+<ol type="1">
+<li>OPERATION SELECT:
+<ul>
+<li>The {0..4}(Fire[11]) domain must transform into Water.function(Fire).domain(Fire).</li>
+<li>Water &amp;&amp; Fire &amp;&amp; Fire = Wood.</li>
+<li>{0..4}(Fire[11]) -&gt; Metal op -&gt; Wood.</li>
+<li>Therefore, <strong>(Water = Metal(a, b?))</strong>.</li>
+<li><span class="todo done">TODO: Why exponentiation?</span>
+<ul>
+<li>(Earth op) Water.fire.fire = Water.</li>
+<li>Water = f(x,y).</li>
+<li>Therefore, Water = a ^ b.</li>
+</ul></li>
+</ul></li>
+<li>OPERAND SELECT:
+<ul>
+<li>Because the Metal transformation transforms {0..4}(Fire) -&gt; Metal op -&gt; Water, the first operand (the thing being transformed) must be {0..4}(Fire).</li>
+<li>Metal(Fire, x) = Water iff x = Fire.</li>
+<li>The EOF states that the simplest valid expression for x(Fire) is the correct one, therefore x(Fire) = 0.</li>
+<li>Therefore, <strong>(Water = {0..4}^0 = {1,1,1,1,1})</strong>.</li>
+</ul></li>
+</ol>
+<hr />
+<p><span class="expr">10. Earth[12] = {0, 0.25, 0.5, 0.75, 1}</span></p>
+<ol type="1">
+<li>OPERATION SELECT:
+<ul>
+<li>The {0..4}(Fire[11]) domain must transform into Earth.function(Fire).domain(Fire).</li>
+<li>Earth &amp;&amp; Fire &amp;&amp; Fire = Water.</li>
+<li>{0..4}(Fire[11]) -&gt; Wood op -&gt; Water.</li>
+<li>Therefore, <strong>(Earth = Wood(a, b?))</strong>.</li>
+<li><span class="todo done">TODO: Why division?</span>
+<ul>
+<li>(Earth op) Earth.fire.fire = Metal.</li>
+<li>Metal = f(x,y).</li>
+<li>Therefore, Earth = a / b.</li>
+</ul></li>
+</ul></li>
+<li>OPERAND SELECT:
+<ul>
+<li>Because the Wood transformation transforms {0..4}(Fire) -&gt; Wood op -&gt; Earth, the first operand (the thing being transformed) must be {0..4}(Fire).</li>
+<li>Wood(Fire, x) = Earth if x = Fire, x = Water, or x = Metal.</li>
+<li>If x = Fire = 0, then there is division by 0, leading to infinity as the result for each element of the domain. Since 1 would be added to infinity for each element, this nullifies the effect of the Water operand in the addition operation, thereby violating the economy of form (EOF).</li>
+<li>If x = Water = 1, then y/1 = y, and the operation results in no changes to the first operand, thereby violating the EOF.</li>
+<li>If x = Metal, the {0..4}/4 = {0, 0.25, 0.5, 0.75, 1}, which is a valid result.</li>
+<li>Therefore, <strong>(Earth = {0..4}/4 = {0, 0.25, 0.5, 0.75, 1})</strong>.</li>
+<li>Also, <strong>(Fire[10] = {1, 1.25, 1.5, 1.75, 2})</strong>.</li>
+</ul></li>
+</ol>
+<hr />
+<p><span class="math inline">\(r_n^3 \times g(x_n)\)</span> where <span class="math inline">\(x_n = [1, 1.25, 1.5, 1.75, 2]\)</span></p>
+<hr />
+<ul>
+<li>Prove: Fire = Water * Earth = Water * Wood * Metal</li>
+<li>Fire -&gt; Earth -&gt; Metal</li>
+<li>Therefore, Fire = Water * Earth</li>
+<li>Either Water or Earth must include a Metal factor, in order for Fire to have the correct units in the minimum number of steps (i.e. following EOF).</li>
+<li>Since Metal * x = Water is not possible for any x, Earth = Metal * x must be used.</li>
+<li>Since Metal -&gt; Wood -&gt; Earth, Earth = Wood * Metal.</li>
+<li>Since the whole expression Water * Wood * Metal = (Metal * Wood) * Water = Fire, this expression holds. [_]</li>
+</ul>
+<hr />
+<ul>
+<li>Prove: Water = sqrt(Metal)</li>
+<li>Planets(Fire) -&gt; Wood -&gt; result(Water)</li>
+<li>Sequence-of(Earth op) Wood = Water; Wood = f(g(x)) = h(x) (c.f. Metal = h(x,y))</li>
+<li>The only unary Wood operation which maps number -&gt; number = sqrt(x)</li>
+<li>Therefore, Water = sqrt(Metal) [_]</li>
+</ul>
+<hr />
+<ul>
+<li>Prove: Metal = Earth / Wood</li>
+<li>Because Water doesn’t need to have units, the EOF states that it has no units.</li>
+<li>The only way to ensure that Water has no units is if Water = sqrt(Metal) = sqrt(a/b) where units(a) = units(b).</li>
+<li>The above equation holds true for:
+<ul>
+<li><ol type="1">
+<li>a = Earth, b = Wood, and</li>
+</ol></li>
+<li><ol start="2" type="1">
+<li>a = Earth, b = Water.</li>
+</ol></li>
+</ul></li>
+<li>However, Earth -&gt; Wood -&gt; Metal, whereas Earth -&gt; Water -&gt; Fire.</li>
+<li>Therefore, Metal = Earth / Wood</li>
+</ul>
+<hr />
+<ul>
+<li>Prove: Metal of sqrt(Metal) = f(Metal op)</li>
+<li>No-units = no(Water op) units(Earth) = Water</li>
+<li>units(Metal) = units = Earth. Therefore that which has units is Metal.</li>
+<li>Let Metal have units of x = Earth.</li>
+<li>x(Earth) / x(Earth) = Metal = no units.</li>
+<li>units(Water) = Metal = no units.</li>
+<li>Therefore, Water is that which has no units.</li>
+<li>Limit scope to Water: the question is “what does Water depend on?”</li>
+<li>Water has no units by virtue of the division operation Earth / Wood, therefore, in order to force Water to have no units, we must include everything up to this division operation.</li>
+<li>i = i = i: Metal = domain (three i’s because of the second operation: sqrt(z_i)</li>
+<li>Earth_i = Metal. Wood_i = Fire.</li>
+<li>Metal -&gt; Metal -&gt; Metal.</li>
+<li>Metal -&gt; Fire -&gt; Water.</li>
+<li>Metal / Water = Wood.</li>
+<li>sqrt(Wood) = Fire.</li>
+<li>elof Fire = Earth (that which has effective units).</li>
+<li>Earth(that which has effective units) -&gt; Metal op -&gt; Water(that which has no units = target units)</li>
+<li>Therefore, Metal = f(Metal op) [_]</li>
+</ul>
+<hr />
+<ul>
+<li>Metal-op, by EOF, must be combined with the condition “must be a function of planets”.</li>
+<li>Since the Metal op doesn’t define a operation which maps object -&gt; quantity, the next simplest way to map object -&gt; quantity is by accessing a property of that object</li>
+<li>The property accessor method is the Earth op.</li>
+<li>Since planets(Fire) &amp;&amp;(Earth op) Water = Metal, this should be tried first. Water has no property associated with it, however. Therefore, Water must be the object of object.property. The simplest derivative object of planets(Fire) that = Water is moons-of(Metal op) planets(Fire) = Water. Therefore, Water = moons of planets.</li>
+<li>(Fire || Wood || Water) &amp;&amp; Water = Metal. Of these, only Wood has a property of an object associated with which maps to a quantity (mass).</li>
+<li>Therefore, the Metal operation is the operation which yields the mass property of the moon objects of the planet operand. [_]</li>
+</ul>
+<hr />
+<ul>
+<li>Prove: Earth = Metal + Wood</li>
+<li>Earth = mass(Wood) &amp;&amp; Metal. Metal = moon(s)-of(Metal op) Wood(Jupiter). Since Jupiter has neither 5 nor 1 moon, and since the Earth result must be either a sequence of 5 or a scalar, Earth =/= mass &amp;&amp; Metal.</li>
+<li>Therefore, Earth must be the result of an operation.</li>
+<li>Earth_i = Metal. Wood_i = Fire. i=i -&gt; Water. Water -&gt; Metal -&gt; Earth. Water -&gt; Fire -&gt; Metal. x_i(Earth) &amp;&amp; y_i(Metal) = Fire. elof Fire = Earth(that which has effective units).</li>
+<li>Target units = units(mass(Wood)) = Water. What which has target units = Wood.</li>
+<li>Earth(that which has effective units) -&gt; Fire -&gt; Wood(that which has target units). Therefore, Earth = Fire(a, b?).</li>
+<li>Sequence-of(Earth op) Metal = Earth. Metal = f(x,y). The only binary Metal operation which maps number -&gt; number is “+”. Therefore, Earth = a + b.</li>
+<li>a and b must have the same units, therefore Earth = Metal + Wood. [_]</li>
+</ul>
+<hr />
+<ul>
+<li>Prove: Metal = max(masses of moons of planet N)</li>
+<li>Max is the only Fire function which maps collection -&gt; number.</li>
+<li>Therefore, by the EOF, Metal = Max(Metal). This automatically forms a sequence.</li>
+<li>If Metal is not a function of N, which is the case if Metal is a constant and the EOF applies, then the EOF states that Metal must be forced into a sequence (i.e. the reverse of the elements-of operation would be used). This requires an additional step, thereby being less efficient in terms of the EOF.</li>
+<li>Therefore, the Metal of max(Metal) is unique for each planet, and does not represent a constant (the max of the masses of the moons of a single planet).</li>
+</ul>
+<hr />
+<ul>
+<li>Prove: Wood = avg(Earth)</li>
+<li>Since both Wood and Metal represent sequences, the operations must be performed on their elements.</li>
+<li>elements-of(Earth op) Wood = Water. elements-of(Earth op) Metal = Earth.</li>
+<li>Earth -&gt; Metal -&gt; Water.</li>
+<li>Therefore, Wood = Metal(a, b?).</li>
+<li>The only Metal operation which maps collection -&gt; number is the “average” operation.</li>
+<li>Therefore, Wood = average(Earth). [_]</li>
+</ul>
+<hr />
+<ul>
+<li>Prove: Earth = Metal &amp;&amp; not(max(Metal))</li>
+<li>set-of(Wood op) Fire = Earth</li>
+<li>Metal-set -&gt; Earth op -&gt; Fire-set</li>
+<li>The only Earth operation which maps collection -&gt; collection is the intersection(&amp;&amp;) operation</li>
+<li>units-of elements-of each collection must be the same.</li>
+<li>Therefore, Earth = Metal &amp;&amp; Wood</li>
+<li>Because of EOF, Metal (because it can be) must be masses-of moons-of planets.</li>
+<li>Wood is already a set (it must be to be an operand of the &amp;&amp; operation), and Metal is a set.</li>
+<li>Metal -&gt; Water op -&gt; Wood.</li>
+<li>The only Water operation which results in a set is the “not” operation.</li>
+<li>Therefore, Wood = not(Metal).</li>
+<li>Since x &amp;&amp; not-x is the null set, and taking the average of the null set is impossible, the EOF states that the transition from Metal -&gt; Metal is given by Fire-op(Metal).</li>
+<li>The only Fire operation which maps set -&gt; (number | set), such that (number | set) is the input to the “not” operation, is the “max” operation.</li>
+<li>Therefore, Earth = max(masses of moons of planet N) &amp;&amp; not(max(masses of moons of planet N)).</li>
+</ul>
+<hr />
+<ul>
+<li>Prove: Wood denominator = Mass of Earth’s moon</li>
+<li>If the Wood in the numerator equals the Wood in the denominator, the EOF states that the expression ought to be x/y + 1. Since this is not the case, they cannot be equal.</li>
+<li>The next possibility in line is forcing Wood to be a sequence by taking elements-of(Earth op) Wood = Water.</li>
+<li>By the EOF, the elements of the Wood sequence are constant (if possible).</li>
+<li>Since Water must be a function of the masses of a planet’s moons, and (x = Earth | Fire | Wood) &amp;&amp; mass(Wood) = Water, we have to consider each possibility.</li>
+<li>Since Earth = moons-of(Water = Mercury), and Mercury has no moons, x cannot = Earth.</li>
+<li>Since Fire = moons-of(Metal = Venus), and Venus has no moons, x cannot be Fire.</li>
+<li>Since Wood = moons-of(Earth = planet Earth), and planet Earth has exactly one moon, x must be Wood.</li>
+<li>Therefore, the Wood denominator = a sequence with all elements being the mass of planet Earth’s moon. [_]</li>
+</ul>
+<hr />
+<ul>
+<li>Prove: Wood = 10^16 kg</li>
+<li>Let x be a rounded number, as in 10^(elof N) * x = elof N. (Because must be able to be equal to by EOF)</li>
+<li>Therefore, x = Water.</li>
+<li>Constant = Earth.</li>
+<li>Transforming a constant into a rounded number = (Earth -&gt; Metal op -&gt; Water).</li>
+<li>Therefore, Wood = Metal(a, b?).</li>
+<li>The only Metal operation which transforms number(constant) -&gt; number(x) is “^”.</li>
+<li>Therefore, Wood = a^b.</li>
+<li>Both a and b must have no units, therefore their units must be equal, and also equal to the units of Wood.</li>
+<li>Therefore, Wood = Fire ^ Metal</li>
+<li>Max must be used. Since Fire is determined first, there is no a priori limitation on Fire, therefore it must be 10. Since Metal must have no units, this must be enforced by taking Metal(that which has effective units) -&gt; Fire op -&gt; Water(target units = no units).</li>
+<li>Because max must be used, Fire = 10 and Water = 6. Therefore, Metal = 16.</li>
+<li>Therefore, Wood = 10^16, and Metal &gt;= 10^16 (&gt;= so that rounded numbers like 1.0000001 -&gt; 1.00(0) can be accounted for as belonging to the appropriate set with the condition &gt;= 1, for example).</li>
+</ul>
+<hr />
+<p><span class="math display">\[
+    \mathbf{Water} = 
+    \sqrt
+    {
+        \frac
+        {
+            \mathbf{max} (m_n) +
+            \mathbf{avg}
+            \left( 
+                m_n \cap \overline{ \mathbf{max} (m_n) }
+            \right)
+        }
+        {
+            m_e
+        }
+    }
+\]</span></p>
+<ul>
+<li>where <span class="math inline">\(m_n\)</span> = masses of moons <span class="math inline">\(\le 10^{16}\)</span>kg of planet <span class="math inline">\(n\)</span>,</li>
+<li>and <span class="math inline">\(m_e\)</span> = mass of the moon of Planet Earth.</li>
+</ul>
+<hr />
+<ul>
+<li>Prove: Wood = (-1)^(N+1)</li>
+<li>Wood = Fire ^ Metal</li>
+<li>Because Wood must be a sequence: elof Wood_i = Earth.</li>
+<li>Because These elements must have no units, Earth(effective units) -&gt; Metal op -&gt; Water(target units = no units).</li>
+<li>The only Metal op which maps number (input is number) -&gt; number is “^”</li>
+<li>Therefore, Wood = a ^ b.</li>
+<li>units(a) = units(b) and units(a &amp;&amp; b) = units(a ^ b) = no units</li>
+<li>Therefore, Wood = Fire ^ Metal.</li>
+<li>Since there is no need for units on the planets or their properties, the function is from the index representation of the planets.</li>
+<li>elof result(Wood) = Fire. elof input({0..4})(Fire) = Earth. Earth -&gt; Water op -&gt; Fire.</li>
+<li>Therefore, Wood = f(Water op).</li>
+<li>What is the Water op? How do we yield Water from index {0..4}.</li>
+<li>The simplest way to transform {0..4} -&gt; Water is by Metal op. Since there is no unary Metal operation, and since we seek to transform {0..4} -&gt; Water, {0..4}(Fire) ^(Metal op) 0(Fire) = Water.</li>
+<li>Since Water -&gt; Fire op -&gt; Metal, and the only way to yield Metal from Water using a Fire op is if Fire = addition (unary keeps the element the same), and since adding sequences requires that the sequences have the same size, and since the Fire sequence {0..4} does indeed have the same size as {1,1,1,1,1}: Metal = {0..4} + {1,1,1,1,1} = {1..5}. Addition works like adding vectors.</li>
+<li>Water -&gt; Wood op -&gt; Fire, but there is no Wood op which maps sequence(i.e. Water) -&gt; sequence(i.e. Fire).</li>
+<li>The next option is to try elements of the sequences. Since Water is already a function of an index (i.e. {0..4}), elof(Wood op) Water = Wood.</li>
+<li>elof(Wood op) Fire_i(Earth) = Metal.</li>
+<li>Wood -&gt; Water op -&gt; Metal.</li>
+<li>Water-op(elof Water) = Earth; and sequence-of(Earth op) Earth = Fire. (1)</li>
+<li>Because (1) is possible, the Water op must be performed on Water to yield Fire.</li>
+<li>The result as elements of a sequence is Earth, and Earth = f(x) (result of a unary operation), therefore the Water operation must be a unary operation.</li>
+<li>The only non-trivial unary Water operation (1^(-1) = 1) which maps number -&gt; number is the additive inverse operation.</li>
+<li>Therefore, Fire = {-1, -1, -1, -1, -1}.</li>
+<li>Furthermore, Wood = {-1, 1, -1, 1, -1}.</li>
+</ul>
+<hr />
+<ul>
+<li>Prove: Metal = 10^13 MeV/c^2</li>
+<li>Metal(that which has effective units) -&gt; Metal op -&gt; Metal(that which has target units).</li>
+<li>The only Metal operation which maps number -&gt; number is “^”.</li>
+<li>Therefore, Metal = a ^ b.</li>
+<li>units(a) &amp;&amp; units(b) = units(that which has no units).</li>
+<li>Therefore, a &amp;&amp; b = Water.</li>
+<li>Furthermore, either a or b = Wood.</li>
+<li>If a = Wood, b = either Fire or Earth.</li>
+<li>Because the units of Metal are the correct units, Metal must be a scalar.</li>
+<li>elof/scalarof(Wood op) planets-index(Fire) = Earth.</li>
+<li>Fire -&gt; Water op -&gt; Earth</li>
+<li>The only Water op which maps sequence to scalar is size-of.</li>
+<li>size-of Fire = Metal = 5.</li>
+<li>Metal -&gt; Wood op -&gt; Earth. However, Wood-op(Metal) = Water =/= Earth, and Metal / x = Earth does not hold for any x.</li>
+<li>Therefore, by the EOF, b = Fire.</li>
+<li>Furthermore, Metal -&gt; Earth op -&gt; Fire</li>
+<li>Since it is possible to reach Fire from Metal in a single Earth operation (binary multiplication), the EOF states binary multiplication must be used (as opposed, for example, to a composite operation involving unary squaring of Metal).</li>
+<li>Therefore, Fire = 5(Metal) * Earth(2) = 10(Fire).</li>
+<li>Furthermore, Metal = 10^Wood.</li>
+<li>Since Wood &gt; Fire, and there are infinite possibilities of Wood which are &gt; 10(Fire), we must use the minimum of these possibilities represented by Wood (13).</li>
+<li>Therefore, Metal = 10^13 MeV/c^2</li>
+</ul>
+<hr />
+<p><span class="math display">\[M_q = \left[ r_n^3 \times g(x_n) +  \sqrt{\frac{\mathbf{max} (m_n) + \mathbf{avg} \left( m_n \cap \overline{ \mathbf{max} (m_n) }\right)}{m_e}} \times y_n \times 10^{13} \right] \mathbf{MeV/c^2}\]</span></p>
+<ul>
+<li><span class="math inline">\(M_q =\)</span> quark masses excluding the top quark (totalling 5 quarks).</li>
+<li><span class="math inline">\(r_n =\)</span> radius of the nth planet.</li>
+<li><span class="math inline">\(g(x) =\)</span> Gaussian curve where g(2) = 1.</li>
+<li><span class="math inline">\(x_n = [1, 1.25, 1.5, 1.75, 2]\)</span>.</li>
+<li><span class="math inline">\(m_n =\)</span> set of the masses of the moons of the nth planet.</li>
+<li><span class="math inline">\(m_e =\)</span> mass of Planet Earth’s Moon.</li>
+<li><span class="math inline">\(y_n = [-1,+1,-1,+1,-1]\)</span>.</li>
+</ul>
+</body>
+</html>
